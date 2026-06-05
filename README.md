@@ -10,10 +10,10 @@ Shared, versioned source of truth for the FlexNetOS AI-agent environment: a cura
 scope: project            # or global
 agent: [claude-code, codex]
 skills:
-  - source: git@github.com:FlexNetOS/agent-skills.git
+  - source: https://github.com/FlexNetOS/agent-skills
     skills: "*"
 mcps:
-  - source: git@github.com:FlexNetOS/agent-skills.git
+  - source: https://github.com/FlexNetOS/agent-skills
     mcps: [github, context7, exa, memory, playwright, sequential-thinking]
 ```
 `kasetto sync` to provision + lock; `kasetto sync --locked` to verify (never fetches);
